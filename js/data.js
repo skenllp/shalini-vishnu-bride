@@ -40,15 +40,9 @@
 
     receptionDate: '31 January 2027',
     receptionDateLong: 'Sunday, 31 January 2027',
-    receptionDateShort: 'Sun, 31 Jan 2027',
-    receptionTime: '3:00 PM – 10:00 PM',
-    receptionVenue: 'Pre-Wedding Celebration',
-    receptionAddress: 'Puthupady',
-    receptionAddressLines: ['Puthupady'],
 
     /* Google Maps share links */
-    weddingMap: 'https://maps.app.goo.gl/W1AT2qpKF1G3xhdh8',
-    receptionMap: 'https://maps.app.goo.gl/MwnNqC9tCt6Pks5E6'
+    weddingMap: 'https://maps.app.goo.gl/W1AT2qpKF1G3xhdh8'
   };
 
   function mapsSearch(query) {
@@ -56,8 +50,6 @@
   }
   weddingData.weddingMapUrl = weddingData.weddingMap ||
     mapsSearch(weddingData.weddingVenue + ', ' + weddingData.weddingAddress);
-  weddingData.receptionMapUrl = weddingData.receptionMap ||
-    mapsSearch(weddingData.receptionVenue + ', ' + weddingData.receptionAddress);
 
   window.weddingData = weddingData;
 
